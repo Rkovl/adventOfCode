@@ -1,4 +1,4 @@
-let data = `10062
+const data = `10062
 15651
 1271
 14355
@@ -2246,7 +2246,7 @@ let data = `10062
 // so up above is the data give to me by advent of code 2022 day 1 puzzle
 
 //the quickest way for me to split the data is to turn it into a string then use the split operator
-let dataArr = data.split("\n")
+const dataArr = data.split("\n")
 console.log(dataArr)
 
 // let testArr = [1,2,"",4,"",1]
@@ -2305,7 +2305,7 @@ function trashFunction(repeat, arr){
                 currentCal = 0
                 currentIndex += 1
             }
-            else if(!noFlyArr.includes(currentIndex)){
+            else if(!noFlyArr.includes(currentIndex)){ //checking if the index was used before a cal personal best
                 currentCal = currentCal + cal
             }
 
